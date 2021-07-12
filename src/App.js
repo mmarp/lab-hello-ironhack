@@ -1,24 +1,30 @@
 import logo from './logo.svg';
+
 import './App.css';
+import Navbar from './Navbar';
+import Declarative from './Declarative';
+import Components from './Components';
+import Single from './Single-way';
+import JSX from './JSX';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="App">
+      <div id="dark-background">
+        <Navbar />
+        <h1>Say hello to ReactJS</h1>
+        <p>You will learn how to use the most popular frontend library, and become a super Ninja developer.</p>
+        <button id="btn">Awesome!</button>
+      </div>
+      <div id="white-background">
+        <Declarative />
+        <Components />
+        <Single />
+        <JSX />
+
+      </div>
     </div>
+
   );
 }
 
